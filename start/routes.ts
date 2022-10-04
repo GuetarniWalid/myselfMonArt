@@ -20,4 +20,12 @@
 
 import Route from '@ioc:Adonis/Core/Route'
 
-Route.get('/', 'NotionSentenceTRanslatorsController.index')
+Route.get('/', async () => {
+  return 'Hello world'
+})
+
+Route.get('/s3/credential', 'S3Controller.getCredential')
+
+Route.group(() => {
+  Route.post('/discord', 'DiscordsController.index')
+}).middleware('discordVerif')

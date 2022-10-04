@@ -24,4 +24,12 @@ export default Env.rules({
   NOTION_API_KEY: Env.schema.string(),
   NOTION_MIDJOURNEY_SENTENCE_DB_ID: Env.schema.string(),
   DEEPL_API_KEY: Env.schema.string(),
+  DISCORD_GUILD_ID: Env.schema.string(),
+  DISCORD_APP_ID: Env.schema.string(),
+  DISCORD_PUBLIC_KEY: Env.schema.string(),
+  DISCORD_TOKEN: Env.schema.string(),
+  S3_REGION: Env.schema.string(),
+  S3_BUCKET_NAME: Env.schema.string(),
+  S3_PUBLIC_KEY: Env.schema.string(),
+  S3_PRIVATE_KEY: Env.schema.string(),
 })
